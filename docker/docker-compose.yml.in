@@ -1,0 +1,9 @@
+version: '3.3'
+
+services:
+  benchmark:
+    image: tremor-benchmark:SHORTCOMMITHASH
+    build: .
+    volumes:
+      - ./report.json:/report.json
+    container_name: tremor-benchmark-compose
